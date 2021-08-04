@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+
 import {
 Nav,
 NavLink,
@@ -17,29 +18,29 @@ return (
         <Header/>
 		<NavMenu>
         <NavLink to='/Home' activeStyle={{ color: 'white' }}>
-			Home
+			HOME
 		</NavLink>
 		<NavLink to='/About' activeStyle={{ color: 'white' }} >
         {/* activeStyle */}
-			About
+			ABOUT
 		</NavLink>
         <NavLink to='/OpenProject' activeStyle={{ color: 'white' }} >
         {/* activeStyle */}
-			Projects
+			PROJECTS
 		</NavLink>
 		<NavLink to='/Settings' activeStyle={{ color: 'white' }} >
         {/* activeStyle */}
-			Settings
+			SETTINGS
 		</NavLink>
 		<NavLink to='/UserManual' activeStyle={{ color: 'white' }} >
         {/* activeStyle */}
-			User Manual
+			USER MANUAL
 		</NavLink>
 		{/* Second Nav */}
 		{/*<NavBtnLink to='/Login'>Sign In</NavBtnLink> */}
 		</NavMenu>
 		<NavBtn>
-		<NavBtnLink to='/Login' activeStyle={{ color: 'white' }} >LOGIN</NavBtnLink>
+		<NavBtnLink to='/Login' activeStyle={{ color: 'white' }} >LOG OUT</NavBtnLink>
 		</NavBtn>
 	</Nav>
 	</>

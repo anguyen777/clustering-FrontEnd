@@ -19,7 +19,8 @@ function App() {
    
 
     <div className="App">
-       <Router>
+      
+    <Router>
     <NavBar />
     <Switch>
     <Route path='/OpenProject' component={OpenProject} />  
@@ -28,9 +29,9 @@ function App() {
       <Route path='/Login' component={Login} />
       <Route path='/Settings' component={Settings} />
       <Route path='/UserManual' component={UserManual} />
-
     </Switch>
     </Router>
+
     </div>
   );
 }
