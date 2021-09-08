@@ -1,54 +1,22 @@
-// import React from 'react';
-
-// const Home = () => {
-// return (
-// 	<div
-// 	style={{
-// 		display: 'flex',
-// 		justifyContent: 'Right',
-// 		alignItems: 'Right',
-// 		height: '100vh'
-// 	}}
-// 	>
-// 	<h1>Welcome to Cluster.io</h1>
-// 	</div>
-// );
-// };
-
-// export default Home;
+/*  Removed from Navlink and router */
 
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { ButtonGroup } from '@material-ui/core';
 
-export default function SimpleMenu() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+export default function Home() {
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <div>
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        Open Menu
-      </Button>
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-      >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
-      </Menu>
+  <ButtonGroup orientation='vertical'>
+  <Button>About</Button>
+  <Button>User Manual</Button>
+  <Button>Settings</Button>
+  <Button>Projects</Button>
+  </ButtonGroup>
     </div>
   );
 }

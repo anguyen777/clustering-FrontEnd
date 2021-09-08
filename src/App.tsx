@@ -24,7 +24,8 @@ function App() {
     <NavBar />
     <Switch>
     <Route path='/OpenProject' component={OpenProject} />  
-      <Route path='/Home'  component={Home} />
+    {/* Route deactivated*/}
+      {/* <Route path='/Home'  component={Home} /> */} 
       <Route path='/About' component={About} />
       <Route path='/Login' component={Login} />
       <Route path='/Settings' component={Settings} />

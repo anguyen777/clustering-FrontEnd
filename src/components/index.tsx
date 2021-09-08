@@ -17,9 +17,9 @@ return (
 		<Bars />
         <Header/>
 		<NavMenu>
-        <NavLink to='/Home' activeStyle={{ color: 'white' }}>
+        {/* <NavLink to='/Home' activeStyle={{ color: 'white' }}>
 			HOME
-		</NavLink>
+		</NavLink> */}
 		<NavLink to='/About' activeStyle={{ color: 'white' }} >
         {/* activeStyle */}
 			ABOUT
